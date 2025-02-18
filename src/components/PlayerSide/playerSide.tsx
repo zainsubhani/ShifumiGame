@@ -1,4 +1,3 @@
-import React from "react";
 import { GameButton } from "../gameButton/gameButton";
 import { PlayerSideProps } from "../../types/game.types";
 
