@@ -1,12 +1,6 @@
 import React, { memo } from "react";
 import { Move } from "../../types/game.types";
-
-interface GameButtonProps {
-  move: Move;
-  onClick: (move: Move) => void;
-  disabled?: boolean;
-}
-
+import { GameButtonProps } from "../../types/game.types";
 export const GameButton = memo(
   ({ move, onClick, disabled }: GameButtonProps) => {
     const handleClick = React.useCallback(() => {

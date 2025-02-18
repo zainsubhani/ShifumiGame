@@ -18,6 +18,20 @@ export interface GameAreaProps {
   onMove: (player: "player1" | "player2", move: Move) => void;
   showWinnerAnimation?: GameResult; // Updated type here
 }
+export interface PlayerSideProps {
+  player: Player;
+  playerState: PlayerState;
+  onMove: (move: Move) => void;
+  disabled: boolean;
+}
+export interface GameButtonProps {
+  move: Move;
+  onClick: (move: Move) => void;
+  disabled?: boolean;
+}
+export interface GameHistoryProps {
+  history: GameHistoryEntry[];
+}
 export interface ScoreBoardProps {
   player1Wins: number;
   player2Wins: number;

@@ -1,15 +1,8 @@
 import React from "react";
-import { Move, Player, PlayerState } from "../../types/game.types";
 import { GameButton } from "../gameButton/gameButton";
+import { PlayerSideProps } from "../../types/game.types";
 
-interface PlayerSideProps {
-  player: Player;
-  playerState: PlayerState;
-  onMove: (move: Move) => void;
-  disabled: boolean;
-}
-
-export const PlayerSide: React.FC<PlayerSideProps> = ({
+const PlayerSide: React.FC<PlayerSideProps> = ({
   player,
   playerState,
   onMove,
@@ -51,3 +44,4 @@ export const PlayerSide: React.FC<PlayerSideProps> = ({
     </div>
   );
 };
+export default PlayerSide;

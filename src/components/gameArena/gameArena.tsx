@@ -1,5 +1,6 @@
 import React from "react";
-import { PlayerSide } from "../playerSide/playerSide";
+import PlayerSide from "../playerSide/playerSide";
+
 import { GameAreaProps } from "../../types/game.types";
 
 export const GameArea: React.FC<GameAreaProps> = ({
